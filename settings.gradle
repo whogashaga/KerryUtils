@@ -1,3 +1,4 @@
+include ':myUtils'
 include ':app:KerryUtils'
 include ':app'
 rootProject.name = "KerryUtils"
