@@ -1,2 +1,2 @@
 include ':utilsLibrary'
-rootProject.name = "KerryUtils"
+rootProject.name = "KerryLibrary"
