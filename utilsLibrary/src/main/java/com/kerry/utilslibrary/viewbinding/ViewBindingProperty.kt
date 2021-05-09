@@ -11,10 +11,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import androidx.viewbinding.ViewBinding
-import com.kerry.myutils.viewbinding.internal.ActivityViewBinder
-import com.kerry.myutils.viewbinding.internal.FragmentViewBinder
-import com.kerry.myutils.viewbinding.internal.checkIsMainThread
-import com.kerry.myutils.viewbinding.internal.requireViewByIdCompat
+import com.kerry.utilslibrary.viewbinding.internal.ActivityViewBinder
+import com.kerry.utilslibrary.viewbinding.internal.FragmentViewBinder
+import com.kerry.utilslibrary.viewbinding.internal.checkIsMainThread
+import com.kerry.utilslibrary.viewbinding.internal.requireViewByIdCompat
 import kotlin.properties.ReadOnlyProperty
 import kotlin.reflect.KProperty
 

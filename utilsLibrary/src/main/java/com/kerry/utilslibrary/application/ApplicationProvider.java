@@ -3,8 +3,6 @@ package com.kerry.utilslibrary.application;
 import android.content.Context;
 import android.content.res.Resources;
 
-import com.kerry.myutils.application.IApplicationProvider;
-
 public class ApplicationProvider implements IApplicationProvider {
     private static volatile ApplicationProvider sInstance;
 
