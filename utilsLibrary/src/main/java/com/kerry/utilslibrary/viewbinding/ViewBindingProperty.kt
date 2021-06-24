@@ -41,6 +41,14 @@ internal abstract class ViewBindingProperty<R, T : ViewBinding>(
 
         private val mainHandler = Handler(Looper.getMainLooper())
 
+        // java.lang.AbstractMethodError: abstract method "void androidx.lifecycle.DefaultLifecycleObserver.onCreate(androidx.lifecycle.LifecycleOwner)"
+        // https://stackoverflow.com/questions/59067743/what-is-this-error-and-why-this-doesnt-happen-when-i-dont-use-library-like-a-c
+        override fun onCreate(owner: LifecycleOwner) {}
+        override fun onStop(owner: LifecycleOwner) {}
+        override fun onStart(owner: LifecycleOwner) {}
+        override fun onPause(owner: LifecycleOwner) {}
+        override fun onResume(owner: LifecycleOwner) {}
+
         @MainThread
         override fun onDestroy(owner: LifecycleOwner) {
             owner.lifecycle.removeObserver(this)
